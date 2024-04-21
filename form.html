@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Formulario</title>
+        <style>
+            form{
+                border: 1px solid #000;
+                padding: 10px;
+                border-radius: 15px;
+                background-color: #eee;
+            }
+            .space_t{
+                margin-top: 15px;
+            }
+            .space_bottom{
+                margin-bottom: 15px;
+            }
+            .block{display: block;}
+        </style>
+    </head>
+    <body>
+        <form name="f_register" action="#" method="post">
+            <label>Username:</label>
+            <input class="block space_bottom" type="text" name="f_name">
+            <label>Password:</label>
+            <input class="block space_bottom" type="text" name="f_pass">
+            <label>Gender:</label>
+            <input type="radio" name="f_gender" checked>Male
+            <input type="radio" name="f_gender">Female
+            <label class="block space_t">Favorite Sports:</label>
+            <input type="checkbox" name="f_sport_football" checked>Football
+            <input type="checkbox" name="f_sport_basketball">Basketball
+            <input type="checkbox" name="f_sport_swimming">Swimming
+            
+            <input class="block space_t" type="submit" name="f_submit" value="Submit">
+        </form>
+    </body>
+</html>
